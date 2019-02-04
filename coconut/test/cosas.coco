@@ -1,0 +1,13 @@
+def add(x,y) =
+	x + y
+
+def mult(x, y) =
+	x * y
+
+def compose(f, g) =
+	f..>g
+
+mult5afterAdd10 = compose(add$(10), mult$(5))
+
+
+5 |> mult5afterAdd10 |> print
